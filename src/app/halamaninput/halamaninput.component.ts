@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AppComponent } from '../app.component';
+import appComponentHtml from '../app.component.html';
 
 @Component({
   selector: 'app-halamaninput',
@@ -7,6 +9,11 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./halamaninput.component.css']
 })
 export class HalamaninputComponent implements OnInit {
+
+  njurusan ="";
+  pjurusan="";
+  a ="";
+  b ="";
 
   constructor(private route : ActivatedRoute) { }
 
@@ -16,7 +23,8 @@ export class HalamaninputComponent implements OnInit {
   }
 
   Masukan(){
-   
+ this.njurusan = this.a;
+ this.pjurusan = this.b;
 
   }
 
