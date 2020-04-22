@@ -11,6 +11,7 @@ export class AppComponent  {
   name = 'Kevin Reynaldi';
   namajurusan = [];
   penjelasanjurusan = [];
+
 constructor(private router:Router){}
     Input(){
       this.router.navigate(['/halamaninput']);
@@ -27,8 +28,8 @@ constructor(private router:Router){}
     }
 
     Pemasukan(){
-      this.namajurusan.push(HalamaninputComponent.a);
-      this.penjelasanjurusan.push(HalamaninputComponent.b);
+      this.namajurusan.push(HalamaninputComponent.njurusan);
+      this.penjelasanjurusan.push(HalamaninputComponent.pjurusan);
 
     }
 
